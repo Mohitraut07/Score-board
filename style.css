@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    /* padding-top: 20px; */
+}
+
+button{
+    background: #09a6e9;
+    color: #fff;
+    border: none;
+    padding: 30px 40px;
+    cursor: pointer;
+    margin: 2em;
+}
+
+.board_container{
+    height: 60vh;
+    width: 100vw;
+    background: #000;
+    color: #fff;
+}
+
+.innings{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100vw;
+    color: #fff;
+    font-size: xx-large;
+    margin: 0 3px;
+}
+
+.innings > div{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.over{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100vw;
+    color: #fff;
+    font-size: xx-large;
+    padding-top: 10px;
+}
+
+.over > div{
+    margin-left: 30px;
+    margin-right: 30px;
+}  
+
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    background: #09a6e9;
+    color: #fff;
+}
+
+.wd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    background: rgb(219, 213, 213);
+    color: #fff;
+}
+
+.nb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    background: rgb(145, 47, 231);
+    color: #ffffff;
+}
+
+.out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 50px;
+    background: #f00;
+    color: #fff;
+
+}
+
+.input_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100vw;
+    background: #000;
+    color: #fff;
+}
+
+.teams{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    /* background: #09a6e9; */
+    color: #fff;
+}
+
+.teams > div{
+    margin: 30px 30px 0 30px;
+}
