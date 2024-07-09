@@ -23,15 +23,15 @@ button {
     border-radius: 10px;
     font-size: 1.2em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s;
 }
 
 button:hover {
     background: #007bb5;
+    transform: scale(1.1);
 }
 
 .board_container {
-    height: auto;
     width: 90%;
     margin: 20px auto;
     background: #fff;
@@ -39,6 +39,7 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .innings, .over {
@@ -57,6 +58,7 @@ button:hover {
     justify-content: space-around;
     align-items: flex-start;
     color: #000;
+    flex-wrap: wrap;
 }
 
 .team1, .team2 {
@@ -65,7 +67,8 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 40%;
+    width: 45%;
+    box-sizing: border-box;
 }
 
 .team1 h2, .team2 h2 {
@@ -119,7 +122,57 @@ button:hover {
     background: #09a6e9;
 }
 
-button:hover {
-    transform: scale(1.1);
-    transition: all 0.2s;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .board_container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .innings, .over {
+        flex-direction: column;
+        font-size: large;
+    }
+
+    .teams {
+        flex-direction: column;
+    }
+
+    .team1, .team2 {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    button {
+        padding: 15px 30px;
+        margin: 1em;
+        font-size: 1em;
+    }
+
+    .wd, .nb, .out, .score {
+        height: 40px;
+        width: 40px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .innings, .over {
+        font-size: medium;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.8em;
+    }
+
+    .wd, .nb, .out, .score {
+        height: 30px;
+        width: 30px;
+        font-size: 0.8em;
+    }
 }
